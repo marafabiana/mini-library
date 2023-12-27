@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>8 Classic Childrens books</h1>
+    </div>
+
+    <div id="library-container"></div>
+
+    <div id="overlay" class="overlay">
+
+        <div id="overlay-content" class="overlay-content">
+            <h2 id="book-title"></h2>
+            <h3 id="book-author"></h3>
+            <p id="book-plot"></p>
+
+            <div class="overlay-small-box">
+                <div>
+                    <p id="book-audience"></p>
+                    <p id="book-pages"></p>
+                </div>
+                <div>
+                    <p id="book-published"></p>
+                    <p id="book-publisher"></p>
+                </div>
+            </div>
+        </div>
+
+        <span class="close" onclick="closeOverlay()">&times;</span>
+
+    </div>
+</body>
+</html>
