@@ -8,7 +8,7 @@ interface Book {
   pages?: number;
   year?: number;
   publisher?: string;
-  color?: string; // Adicione a propriedade color
+  color?: string; 
 }
 
 async function fetchAndDisplayBooks() {
@@ -21,17 +21,16 @@ async function fetchAndDisplayBooks() {
 
     const books: Book[] = await response.json();
 
-    // Imprima os dados no console
     console.log('Books details:', books);
 
     const libraryContainer = document.getElementById('library-container');
 
-    //Definindo as cores para cada livro
+    //Defining the colors for each book
 books.forEach((book, index) => {
   const bookContainer = document.createElement('div');
-  bookContainer.id = 'book'; // Define o ID da div como 'book'
+  bookContainer.id = 'book'; // Sets the div ID to 'book'
   bookContainer.classList.add('book');
-  bookContainer.style.backgroundColor = book.color || '#FFFFFF'; // Defina a cor diretamente na div 'book'
+  bookContainer.style.backgroundColor = book.color || '#FFFFFF'; // Set the color directly in the 'book' div
 
   const bookElement = document.createElement('div');
   bookElement.innerHTML = `<h2>${book.title}</h2><h3>${book.author}</h3>`;
@@ -53,7 +52,7 @@ function showBookDetails(book: Book) {
   const overlayContent = document.querySelector('.overlay-content') as HTMLElement;
 
   if (overlayContent) {
-    overlayContent.style.backgroundColor = book.color || '#FFFFFF'; // Cor padrão caso 'color' não esteja definido
+    overlayContent.style.backgroundColor = book.color || '#FFFFFF'; // Default color if 'color' is not defined
   }
 
   const elements = {
@@ -92,7 +91,7 @@ function closeOverlay() {
 
   if (overlay) {
     overlay.classList.remove('visible');
-    // Redefine a cor padrão da overlay ao fechar
+    // Resets the default overlay color on close
     overlay.style.backgroundColor = '#333';
   }
 }

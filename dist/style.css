@@ -29,7 +29,7 @@ body {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     position: relative;
-    /* Necessário para posicionar a linha corretamente */
+    /* Necessary to position the line correctly */
 }
 
 .book::before {
@@ -38,11 +38,11 @@ body {
     top: 0;
     left: 2;
     width: 3px;
-    /* Largura da linha */
+    /* Line width */
     height: 100%;
-    /* Altura igual à altura do livro */
+    /* Height equal to the height of the book */
     background-color: #333;
-    /* Cor da linha */
+    /* Line color */
     opacity: 0.6;
 }
 
@@ -76,7 +76,6 @@ body {
 .overlay-content {
     padding: 20px;
     border-radius: 1rem;
-    
 }
 
 .close {
@@ -93,15 +92,13 @@ body {
     margin-top: 15px;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #33333327;
-    
+    background-color: #33333327;   
 }
 
 .overlay-small-box>div {
     flex: 1;
-    /* Faz cada div ocupar a mesma largura */
+    /* Makes each div occupy the same width */
     padding: 0 1rem;
-    /* Adiciona um espaçamento interno para melhorar a aparência */
 }
 
 .visible {
@@ -116,11 +113,10 @@ button {
     border: none;
     text-align: center;
     cursor: pointer;
-    
 }
 
 button a {
     text-decoration: none;
     color: black;
-
+    font-weight: bold;
 }
